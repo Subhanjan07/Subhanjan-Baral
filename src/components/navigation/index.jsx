@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { BtnList } from "@/app/data"
+import { BtnList } from "../../app/data"
 import NavButton from "./NavButton";
 
 const Navigation = () => {

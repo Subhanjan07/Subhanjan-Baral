@@ -1,9 +1,9 @@
 import Image from "next/image";
 import bg from "../../../../public/background/about-background.png";
 
-import RenderModel from "@/components/RenderModel";
-import Hat from "@/components/models/Hat";
-import AboutDeatils from "@/components/About";
+import RenderModel from "../../../components/RenderModel";
+import Hat from "../../../components/models/Hat";
+import AboutDeatils from "../../../components/About";
 
 export default function Home() {
   return (
