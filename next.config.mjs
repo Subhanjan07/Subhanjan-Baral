@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true, // ← This line disables the incompatible image optimization
   },
-  basePath: isGitHubPages ? '/Subhanjan-Baral' : '',
+  basePath: "/nextjs-github-pages",
   assetPrefix: isGitHubPages ? '/Subhanjan-Baral/' : '',
 };
 
