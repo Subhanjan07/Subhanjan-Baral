@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
 export default function Hat(props) {
-  const { nodes, materials } = useGLTF('/models/hat-transformed.glb')
+  const { nodes, materials } = useGLTF('/Subhanjan-Baral/models/hat-transformed.glb')
   
   const modelRef = useRef();
   

@@ -5,7 +5,7 @@ import { useFrame } from '@react-three/fiber'
 
 
 export default function Wizard(props) {
-  const { nodes, materials } = useGLTF('/models/wizard-transformed.glb')
+  const { nodes, materials } = useGLTF('/Subhanjan-Baral/models/wizard-transformed.glb')
   
   const modelRef = useRef()
 
