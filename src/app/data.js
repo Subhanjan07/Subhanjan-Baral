@@ -19,10 +19,10 @@ Websites:
 export const projectsData = [
   {
     id: 1,
-    name: "EcoTracker",
-    description: "Track your carbon footprint",
-    date: "2022-08-15",
-    demoLink: "https://ecotracker.example.com",
+    name: "Focus Time",
+    description: "Boost your productivity & stay focused",
+    date: "2025-01-25",
+    demoLink: "https://focus-time-lemon.vercel.app/",
   },
   {
     id: 2,
