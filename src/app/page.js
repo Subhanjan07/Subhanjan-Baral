@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Subhanjan Baral - Home</title> {}
+        <title>Subhanjan Baral</title> {}
         <meta name="description" content="Welcome to Subhanjan Baral's personal portfolio website." />
       </Head>
     <main className="flex min-h-screen flex-col items-center justify-between relative">
