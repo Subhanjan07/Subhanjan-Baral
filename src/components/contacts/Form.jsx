@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { toast } from 'sonner';
+import { Toaster } from 'sonner';
 
 export default function Form() {
   const { register, handleSubmit, formState: { errors } } = useForm();

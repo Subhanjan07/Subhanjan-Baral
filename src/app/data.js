@@ -93,7 +93,7 @@ export const BtnList = [
   { label: "Home", link: "/", icon: "home", newTab: false },
   { label: "About", link: "/subPages/about", icon: "about", newTab: false },
   { label: "Projects", link: "/subPages/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
+  { label: "Contact", link: "/subPages/contact", icon: "contact", newTab: false },
   {
     label: "Github",
     link: "https://www.github.com/Subhanjan07",
