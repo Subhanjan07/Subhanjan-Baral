@@ -1,8 +1,8 @@
 import Image from "next/image";
 import bg from "../../../../public/background/contact-background.png";
+import Form from "../../components/contacts/Form";
 
-
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Image src={bg} alt="background-image" className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25" /> 
