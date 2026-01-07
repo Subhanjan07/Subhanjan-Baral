@@ -2,6 +2,10 @@
 
 A modern, interactive portfolio website built with Next.js, React Three Fiber, and Tailwind CSS.
 
+## 🚀 Live Website
+
+[Visit the Portfolio](https://subhanjan07.github.io/Subhanjan-Baral/)
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -11,8 +15,9 @@ A modern, interactive portfolio website built with Next.js, React Three Fiber, a
 
 ### Installation & Running
 
-1. **Navigate to the project directory:**
+1. **Clone the repository:**
    ```bash
+   git clone https://github.com/Subhanjan07/Subhanjan-Baral.git
    cd Subhanjan-Baral
    ```
 
@@ -72,6 +77,14 @@ See `EMAILJS_SETUP.md` for detailed EmailJS configuration instructions.
 - **React Hook Form** - Form handling
 - **Sonner** - Toast notifications
 
+## ✨ Features
+
+- Interactive 3D models using Three.js
+- Animated navigation menu
+- Projects showcase
+- Responsive design
+- Contact form with email notifications
+
 ## 📁 Project Structure
 
 ```
@@ -92,6 +105,15 @@ Subhanjan-Baral/
 └── package.json          # Dependencies
 ```
 
+## 🌐 Deployment
+
+This site is deployed on GitHub Pages using static export from Next.js.  
+To deploy updates:
+
+```bash
+npm run deploy
+```
+
 ## 🐛 Troubleshooting
 
 ### Port Already in Use
@@ -106,7 +128,14 @@ Make sure you're using Node.js version 18 or higher. Check your version with:
 node --version
 ```
 
+## 📬 Contact
+
+Use the contact form on the website to get in touch, or connect via [LinkedIn](https://www.linkedin.com/in/subhanjan-baral-15852525a/) or [GitHub](https://github.com/Subhanjan07).
+
 ## 📄 License
 
 This is a personal portfolio project.
 
+---
+
+Feel free to fork, star, or contribute!
