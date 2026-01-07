@@ -12,26 +12,26 @@ const ItemLayout = ({ children, className }) => {
 
 const AboutDetails = () => {
     return (
-        <section className='py-20 w-full'>
-            <div className='grid grid-cols-12 gap-8 w-full'>
+        <section className='py-20 w-full px-4 md:px-8 lg:px-16'>
+            <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 w-full max-w-7xl mx-auto'>
 
-                <ItemLayout className='col-span-8 row-span-2 flex-col items-start'>
-                    <h2 className='font-semibold text-4xl text-left w-full capitalize text-accent'>
+                <ItemLayout className='md:col-span-8 md:row-span-2 flex-col items-start'>
+                    <h2 className='font-semibold text-3xl md:text-4xl text-left w-full capitalize text-accent mb-4'>
                         Info
                     </h2>
-                    <p className='font-light'>
+                    <p className='font-light text-sm md:text-base leading-relaxed'>
                         I&apos;m Subhanjan Baral, a Computer Science and Mathematics major at Gettysburg College with a strong foundation in object-oriented programming, data structures, and algorithms. I bring hands-on experience from roles as a Peer Learning Associate and Student Lead, where I&apos;ve supported students academically and led operational teams. I&apos;m passionate about technology, education, and community engagement, as shown through my work as a private tutor and co-founder of Techniteracy, where I organized digital safety seminars for high schoolers. I&apos;m also skilled in Java, Python, JavaScript, and front-end development, and I thrive in collaborative, fast-paced environments.
                     </p>
                 </ItemLayout>
 
-                <ItemLayout className='col-span-4 text-accent'>
-                    <p className='font-semibold w-full text-center text-4xl'>
+                <ItemLayout className='md:col-span-4 text-accent'>
+                    <p className='font-semibold w-full text-center text-2xl md:text-3xl lg:text-4xl'>
                         CS, Math Double Major
                     </p>
                 </ItemLayout>
 
-                <ItemLayout className='col-span-4 text-accent'>
-                    <p className='font-semibold w-full text-center text-4xl'>
+                <ItemLayout className='md:col-span-4 text-accent'>
+                    <p className='font-semibold w-full text-center text-2xl md:text-3xl lg:text-4xl'>
                         Data Science Minor
                     </p>
                 </ItemLayout>

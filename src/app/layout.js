@@ -7,8 +7,15 @@ const inter = Inter({
   variable: "--font-inter",});
 
 export const metadata = {
-  title: "Subhanjan Baral",
-  description: "Welcome to Subhanjan Baral's personal portfolio website.",
+  title: "Subhanjan Baral | Portfolio",
+  description: "Computer Science and Mathematics major at Gettysburg College. Passionate about technology, education, and community engagement. Explore my projects and connect with me.",
+  keywords: ["Subhanjan Baral", "Portfolio", "Computer Science", "Software Developer", "Web Developer", "Gettysburg College"],
+  authors: [{ name: "Subhanjan Baral" }],
+  openGraph: {
+    title: "Subhanjan Baral | Portfolio",
+    description: "Computer Science and Mathematics major at Gettysburg College. Explore my projects and connect with me.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
-    "deploy": "next build && gh-pages -d out"
+    "build:gh-pages": "cross-env GITHUB_PAGES=true next build",
+    "deploy": "cross-env GITHUB_PAGES=true next build && gh-pages -d out"
   },
   "dependencies": {
     "@emailjs/browser": "^4.2.0",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.1.1",
     "gh-pages": "^6.3.0",

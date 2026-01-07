@@ -3,8 +3,20 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
+// Get basePath dynamically for GitHub Pages vs localhost
+const getBasePath = () => {
+  if (typeof window !== 'undefined') {
+    const pathname = window.location.pathname;
+    if (pathname.startsWith('/Subhanjan-Baral')) {
+      return '/Subhanjan-Baral';
+    }
+  }
+  return '';
+};
+
 export default function Staff(props) {
-  const { nodes, materials } = useGLTF('/Subhanjan-Baral/models/staff-transformed.glb')
+  const basePath = getBasePath();
+  const { nodes, materials } = useGLTF(`${basePath}/models/staff-transformed.glb`)
   
   const modelRef = useRef();
 
@@ -67,4 +79,4 @@ export default function Staff(props) {
   )
 }
 
-useGLTF.preload('/models/staff-transformed.glb')
+// Preload will be handled by the component

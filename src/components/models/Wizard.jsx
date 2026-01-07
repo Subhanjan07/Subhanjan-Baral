@@ -3,9 +3,21 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
+// Get basePath dynamically for GitHub Pages vs localhost
+const getBasePath = () => {
+  if (typeof window !== 'undefined') {
+    // Check if we're on GitHub Pages (has basePath in URL)
+    const pathname = window.location.pathname;
+    if (pathname.startsWith('/Subhanjan-Baral')) {
+      return '/Subhanjan-Baral';
+    }
+  }
+  return '';
+};
 
 export default function Wizard(props) {
-  const { nodes, materials } = useGLTF('/Subhanjan-Baral/models/wizard-transformed.glb')
+  const basePath = getBasePath();
+  const { nodes, materials } = useGLTF(`${basePath}/models/wizard-transformed.glb`)
   
   const modelRef = useRef()
 
@@ -205,6 +217,6 @@ export default function Wizard(props) {
   )
 }
 
-useGLTF.preload('/models/wizard-transformed.glb')
+// Preload will be handled by the component
 
 
