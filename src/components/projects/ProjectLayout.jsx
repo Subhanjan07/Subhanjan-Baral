@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 const ProjectLayout = ({name, description, date, demoLink}) => {

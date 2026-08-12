@@ -2,11 +2,11 @@
 
 A modern, interactive portfolio website built with Next.js, React Three Fiber, and Tailwind CSS.
 
-## 🚀 Live Website
+## Live Website
 
 [Visit the Portfolio](https://subhanjan07.github.io/Subhanjan-Baral/)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -25,18 +25,10 @@ A modern, interactive portfolio website built with Next.js, React Three Fiber, a
    ```bash
    npm install
    ```
-   or if you're using yarn:
-   ```bash
-   yarn install
-   ```
 
 3. **Run the development server:**
    ```bash
    npm run dev
-   ```
-   or with yarn:
-   ```bash
-   yarn dev
    ```
 
 4. **Open your browser:**
@@ -44,48 +36,50 @@ A modern, interactive portfolio website built with Next.js, React Three Fiber, a
 
    The page will automatically reload when you make changes to the code.
 
-## 📝 Available Scripts
+## Available Scripts
 
 - `npm run dev` - Start the development server (runs on port 3000)
 - `npm run build` - Build the production version
-- `npm run start` - Start the production server (run `build` first)
 - `npm run lint` - Run ESLint to check for code issues
-- `npm run export` - Build and export static files
+- `npm run build:gh-pages` - Build with GitHub Pages base path
 - `npm run deploy` - Build and deploy to GitHub Pages
 
-## ⚙️ Environment Variables (Optional)
+## Environment Variables
 
-To enable the contact form email functionality, create a `.env.local` file in the root directory:
+To enable the contact form (Google Sheets integration), create a `.env.local` file in the root directory:
 
 ```env
-NEXT_PUBLIC_SERVICE_ID=your_service_id_here
-NEXT_PUBLIC_TEMPLATE_ID=your_template_id_here
-NEXT_PUBLIC_PUBLIC_KEY=your_public_key_here
+NEXT_PUBLIC_GOOGLE_SCRIPT_URL="https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec"
 ```
 
-See `EMAILJS_SETUP.md` for detailed EmailJS configuration instructions.
+### Google Apps Script setup
 
-**Note:** The contact form will still work without EmailJS - it will use a mailto fallback.
+1. Create a Google Sheet with headers: `Timestamp | Name | Email | Message`
+2. Go to **Extensions → Apps Script** and add a `doPost` handler that appends form data to the sheet
+3. Deploy as **Web app** with **Execute as: Me** and **Who has access: Anyone**
+4. Copy the deployment URL (ends in `/exec`) into `.env.local`
+5. Restart the dev server after changing env vars
 
-## 🛠️ Tech Stack
+**Note:** Without the script URL, the contact form falls back to opening the user's default email client.
+
+## Tech Stack
 
 - **Next.js 14** - React framework
 - **React Three Fiber** - 3D graphics
 - **Tailwind CSS** - Styling
-- **EmailJS** - Contact form emails
-- **Framer Motion** - Animations
+- **Google Apps Script** - Contact form submissions to Google Sheets
 - **React Hook Form** - Form handling
 - **Sonner** - Toast notifications
 
-## ✨ Features
+## Features
 
 - Interactive 3D models using Three.js
 - Animated navigation menu
 - Projects showcase
 - Responsive design
-- Contact form with email notifications
+- Contact form with Google Sheets storage
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Subhanjan-Baral/
@@ -95,26 +89,26 @@ Subhanjan-Baral/
 │   │   ├── layout.js     # Root layout
 │   │   ├── data.js       # Portfolio data
 │   │   └── subPages/     # About, Projects, Contact pages
-│   └── components/        # React components
-│       ├── About/         # About section
-│       ├── contacts/      # Contact form
-│       ├── models/        # 3D models
-│       ├── navigation/    # Navigation menu
-│       └── projects/      # Projects display
-├── public/                # Static assets
+│   └── components/       # React components
+│       ├── About/        # About section
+│       ├── contacts/     # Contact form
+│       ├── models/       # 3D models
+│       ├── navigation/   # Navigation menu
+│       └── projects/     # Projects display
+├── public/               # Static assets
 └── package.json          # Dependencies
 ```
 
-## 🌐 Deployment
+## Deployment
 
-This site is deployed on GitHub Pages using static export from Next.js.  
+This site is deployed on GitHub Pages using static export from Next.js.
 To deploy updates:
 
 ```bash
 npm run deploy
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port Already in Use
 If port 3000 is already in use, Next.js will automatically try the next available port (3001, 3002, etc.). Check the terminal output for the actual port.
@@ -128,11 +122,11 @@ Make sure you're using Node.js version 18 or higher. Check your version with:
 node --version
 ```
 
-## 📬 Contact
+## Contact
 
 Use the contact form on the website to get in touch, or connect via [LinkedIn](https://www.linkedin.com/in/subhanjan-baral-15852525a/) or [GitHub](https://github.com/Subhanjan07).
 
-## 📄 License
+## License
 
 This is a personal portfolio project.
 

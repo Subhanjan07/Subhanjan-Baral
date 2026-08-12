@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectLayout from './ProjectLayout';
 
 const ProjectList = ({projects}) => {

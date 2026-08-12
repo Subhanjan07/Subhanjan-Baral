@@ -5,18 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export",
     "build:gh-pages": "cross-env GITHUB_PAGES=true next build",
     "deploy": "cross-env GITHUB_PAGES=true next build && gh-pages -d out"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.2.0",
     "@react-three/drei": "^9.99.5",
     "@react-three/fiber": "^8.15.16",
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.8",
     "lucide-react": "^0.344.0",
     "next": "^14.2.28",
     "react": "^18",

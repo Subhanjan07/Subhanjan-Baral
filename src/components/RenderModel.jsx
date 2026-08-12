@@ -1,6 +1,6 @@
 "use client"
 import clsx from "clsx";
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
 
